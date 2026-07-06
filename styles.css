@@ -9,7 +9,7 @@ body {
     text-align: center;
 
     color: aliceblue;
-    background-color: rgb(1, 80, 140);
+    background: rgb(36, 36, 36);
 }
 
 button {
@@ -27,6 +27,9 @@ button {
 
 .cityInput {
     margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    border-style: none;
 }
 
 .weatherEmoji {
@@ -49,7 +52,8 @@ button[type="submit"]:hover {
 }
 
 .card {
-    background: linear-gradient(180deg, blue, rgba(255, 255, 255, 0.381));
+    display: none; /*Just will see the card if insert a city*/
+    background: linear-gradient(180deg, blue, rgba(255, 255, 255, 0.385));
     padding: 80px 80px 20px;
     border-radius: 20px;
 }
@@ -58,4 +62,8 @@ button[type="submit"]:hover {
     font-size: 2.5rem;
     font-weight: bold;
     color: black;
+}
+
+:placeholder-shown {
+    font-weight: bold;
 }
